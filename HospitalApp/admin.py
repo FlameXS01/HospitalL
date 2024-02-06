@@ -11,8 +11,12 @@ class PacienteAdmin(admin.ModelAdmin):
 
 
 
-
+class DoctorAdmin (admin.ModelAdmin):
+    list_display = ("nombreDoctor","especialidad","grado_cientifico","ciDoctor")
+    search_fields = ("nombreDoctor","especialidad","grado_cientifico")
+    list_filter = ("nombreDoctor",)
 
 
 
 admin.site.register(Paciente,PacienteAdmin)
+admin.site.register(Doctor,DoctorAdmin)
