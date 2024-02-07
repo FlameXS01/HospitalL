@@ -11,7 +11,10 @@ class Formulario_Paciente (forms.Form):
     gradoCientifico = forms.CharField(required=True)
 
 
-
+class Formuario_doctor (forms.ModelForm):
+    class Meta :
+        model = Doctor
+        
 
 
 
