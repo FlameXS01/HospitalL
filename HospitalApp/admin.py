@@ -17,6 +17,19 @@ class DoctorAdmin (admin.ModelAdmin):
     list_filter = ("nombreDoctor",)
 
 
+class EspecialidadAdmin(admin.ModelAdmin):
+    list_display = ("nombre",)
+    search_fields = ("nombre",)
+    list_filter = ("nombre",)
+
+class RegistroDPacienteAdmin(admin.ModelAdmin):
+    list_display = ("paciente", "sala", "enfermedad")
+    search_fields = ("paciente", "sala", "enfermedad")
+    list_filter = ("paciente", "sala", "enfermedad")
+
 
 admin.site.register(Paciente,PacienteAdmin)
 admin.site.register(Doctor,DoctorAdmin)
+admin.site.register(RegistroDPaciente, RegistroDPacienteAdmin)
+admin.site.register(Especialidad, EspecialidadAdmin)
+

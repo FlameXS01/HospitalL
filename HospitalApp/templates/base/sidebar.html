@@ -1,0 +1,50 @@
+<div class="page-sidebar-wrapper">
+    <div class="page-sidebar navbar-collapse collapse">
+      <ul
+        class="page-sidebar-menu page-header-fixed page-sidebar-menu-closed"
+        data-keep-expanded="false "
+        data-auto-scroll="true "
+        data-slide-speed="200 "
+        style="padding-top: 20px"
+      >
+        <li class="sidebar-toggler-wrapper hide">
+          <div class="sidebar-toggler">
+            <span></span>
+          </div>
+        </li>
+  
+        <!---------------------- PACIENTES ----------------------------->
+  
+        <li class="nav-item start">
+          <a href="{% url 'Paciente' %} " class="nav-link nav-toggle">
+            <i class="fa fa-book"></i>
+            <span class="title">Paciente</span>
+          </a>
+        </li>
+        <!----------------------------- PROFESOR -------------------------------------->
+        <li class="nav-item start">
+          <a href="{% url 'Doctor' %} " class="nav-link nav-toggle">
+            <i class="fa fa-book"></i>
+            <span class="title">Doctor</span>
+          </a>
+        </li>
+        <!---------------------- PACIENTES ----------------------------->
+
+        <li class="nav-item start">
+          <a href="{% url 'Sala' %} " class="nav-link nav-toggle">
+            <i class="fa fa-book"></i>
+            <span class="title">Sala</span>
+          </a>
+        </li>
+         <!---------------------- REGISTRO DE PACIENTES  ----------------------------->
+
+         <li class="nav-item start">
+          <a href="{% url 'RegistroPaciente' %} " class="nav-link nav-toggle">
+            <i class="fa fa-book"></i>
+            <span class="title">Registro de Pacientes</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
