@@ -14,6 +14,10 @@ class Paciente (models.Model):
     direccion =  models.CharField(max_length=200,verbose_name='Direccion')
     phoneNumber = models.IntegerField(max_length=10, verbose_name='Numeo de telefono')
     
+    class Meta:
+        verbose_name = "Clase"
+        verbose_name_plural = "Clases"
+        
 
     def __str__(self):
         return self.nombrePaciente
@@ -34,4 +38,5 @@ class Sala (models.Model):
     responsable = models.ForeignKey(Doctor,blank=True, null=True,on_delete=models.CASCADE)
 
 #class RegistroDPacientes:
-    
+
+
